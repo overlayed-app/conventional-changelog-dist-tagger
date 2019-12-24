@@ -1,7 +1,7 @@
 {
   "name": "@overlayed-app/standard-version-tagger",
   "private": false,
-  "version": "1.1.0",
+  "version": "1.1.1",
   "description": "Helps make standard-version releases using tagged dist data 📦🎁📃",
   "bin": "index.js",
   "scripts": {
