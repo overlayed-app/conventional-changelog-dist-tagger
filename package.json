@@ -1,0 +1,24 @@
+{
+  "name": "@overlayed-app/standard-version-tagger",
+  "private": false,
+  "version": "1.0.0",
+  "description": "Helps make standard-version releases using tagged dist data 📦🎁📃",
+  "bin": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/overlayed-app/standard-version-tagger.git"
+  },
+  "keywords": [
+    "overlayed-app",
+    "standard-version"
+  ],
+  "author": "Ben Greenier",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/overlayed-app/standard-version-tagger/issues"
+  },
+  "homepage": "https://github.com/overlayed-app/standard-version-tagger#readme"
+}
