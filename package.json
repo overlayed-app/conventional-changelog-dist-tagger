@@ -5,7 +5,16 @@
   "description": "Helps make standard-version releases using tagged dist data 📦🎁📃",
   "bin": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "commit": "git-cz",
+    "release": "standard-version"
+  },
+  "standard-version": {
+    "scripts": {
+      "postcommit": "node index.js"
+    },
+    "skip": {
+      "tag": true
+    }
   },
   "repository": {
     "type": "git",
@@ -20,5 +29,15 @@
   "bugs": {
     "url": "https://github.com/overlayed-app/standard-version-tagger/issues"
   },
-  "homepage": "https://github.com/overlayed-app/standard-version-tagger#readme"
+  "homepage": "https://github.com/overlayed-app/standard-version-tagger#readme",
+  "devDependencies": {
+    "commitizen": "^4.0.3",
+    "cz-conventional-changelog": "^3.0.2",
+    "standard-version": "^7.0.1"
+  },
+  "config": {
+    "commitizen": {
+      "path": "./node_modules/cz-conventional-changelog"
+    }
+  }
 }
