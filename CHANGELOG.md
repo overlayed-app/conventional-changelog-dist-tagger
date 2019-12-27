@@ -2,6 +2,17 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+## [2.0.0](https://github.com/overlayed-app/standard-version-tagger/compare/v1.1.1...v2.0.0) (2019-12-27)
+
+
+### ⚠ BREAKING CHANGES
+
+* **git-commit:** Git commit now forces addition
+
+### improvement
+
+* **git-commit:** force commit pathspec ([44052fe](https://github.com/overlayed-app/standard-version-tagger/commit/44052fe628b1ef183f39d7ddbae86acf1b54ae9e))
+
 ### [1.1.1](https://github.com/overlayed-app/standard-version-tagger/compare/v1.1.0...v1.1.1) (2019-12-24)
 
 
