@@ -16,7 +16,7 @@ const rel_sha = runCommand("git", "rev-parse", rel_branch);
 
 // built tag with dists
 runCommand("git", "checkout", "-b", tag_branch);
-runCommand("git", "add", dist_files);
+runCommand("git", "add", "--force", dist_files);
 runCommand("git", "commit", "-m", `'chore(release): v${version} dist'`);
 runCommand("git", "tag", `v${version}`);
 
