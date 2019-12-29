@@ -1,9 +1,10 @@
 {
-  "name": "@overlayed-app/standard-version-tagger",
+  "name": "@overlayed-app/conventional-changelog-dist-tagger",
   "private": false,
   "version": "2.0.0",
   "description": "Helps make standard-version releases using tagged dist data 📦🎁📃",
-  "bin": "index.js",
+  "main": "preset.js",
+  "bin": "tagger.js",
   "scripts": {
     "commit": "git-cz",
     "release": "standard-version"
@@ -39,5 +40,10 @@
     "commitizen": {
       "path": "./node_modules/cz-conventional-changelog"
     }
+  },
+  "dependencies": {
+    "conventional-changelog-angular": "^5.0.6",
+    "conventional-commits-parser": "^3.0.8",
+    "semver": "^7.1.1"
   }
 }

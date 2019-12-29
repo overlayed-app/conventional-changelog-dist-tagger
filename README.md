@@ -1,4 +1,4 @@
-# standard-version-tagger
+# conventional-changelog-dist-tagger
 
 Helps make [standard-version](https://github.com/conventional-changelog/standard-version) releases using tagged dist data. 📦🎁📃
 
@@ -15,7 +15,7 @@ Further, master still contains a release commit in it's tree, with the updated `
 First, install this package, and [standard-version](https://github.com/conventional-changelog/standard-version) as `devDependencies`:
 
 ```
-npm i -D standard-version @overlayed-app/standard-version-tagger
+npm i -D standard-version @overlayed-app/conventional-changelog-dist-tagger
 ```
 
 Then, configure standard-version properly, in your `package.json`:
@@ -23,7 +23,7 @@ Then, configure standard-version properly, in your `package.json`:
 ```
 "standard-version": {
   "scripts": {
-    "postcommit": "npx @overlayed-app/standard-version-tagger"
+    "postcommit": "npx @overlayed-app/conventional-changelog-dist-tagger"
   },
   "skip": {
     "tag": true
@@ -31,13 +31,14 @@ Then, configure standard-version properly, in your `package.json`:
 }
 ```
 
-Then, run `standard-version`:
+Then, run `standard-version`, with this package as a preset:
 
 ```
-npx standard-version
+# Note: preset name is not a typo, conventional-changelog prefix is implicit
+npx standard-version --preset @overlayed-app/dist-tagger
 ```
 
-This replaces the built-in `standard-version` tag functionality with our tagger. To further configure our tagger, use the following environment variables:
+This replaces the built-in `standard-version` commit parsing logic, and tag generation functionality with our parser and tagger. Our parser is not configurable, by design. However, to further configure our tagger, use the following environment variables:
 
 - `DIST_FILES` - the [git pathspec](https://git-scm.com/book/en/v2/Git-Internals-Environment-Variables#_pathspecs) used to add dist files. Default: `dist/*`.
 - `REL_BRANCH` - the release branch of your repo. Default: `master`.
