@@ -1,7 +1,7 @@
 {
   "name": "@overlayed-app/conventional-changelog-dist-tagger",
   "private": false,
-  "version": "3.0.0",
+  "version": "4.0.0",
   "description": "Helps make standard-version releases using tagged dist data 📦🎁📃",
   "main": "preset.js",
   "bin": "tagger.js",
@@ -11,7 +11,7 @@
   },
   "standard-version": {
     "scripts": {
-      "postcommit": "node index.js"
+      "postcommit": "node tagger.js"
     },
     "skip": {
       "tag": true
