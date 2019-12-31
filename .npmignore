@@ -1,3 +1,5 @@
 .github/
+coverage/
+__tests__/
 LICENSE
 CHANGELOG.md
