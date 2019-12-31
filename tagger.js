@@ -2,6 +2,17 @@
 const fs = require("fs");
 const path = require("path");
 const child_process = require("child_process");
+const helpers = require("./helpers");
+
+// cannot run on empty repo
+try {
+  helpers.assertNonEmptyRepo({
+    cwd: process.cwd()
+  });
+} catch (ex) {
+  console.error(ex);
+  process.exit(1);
+}
 
 // gather version info
 const version_filename = path.join(process.cwd(), "package.json");
@@ -29,7 +40,7 @@ if (rel_sha === head_sha) {
 
 // helper to run a local command
 function runCommand(cmd, ...args) {
-  const proc = child_process.spawnSync(cmd, args);
+  const proc = child_process.spawnSync(cmd, args, { cwd: process.cwd() });
   if (proc.error) {
     throw proc.error;
   }

@@ -1,5 +1,8 @@
 {
   "name": "@overlayed-app/conventional-changelog-dist-tagger",
+  "publishConfig": {
+    "access": "public"
+  },
   "private": false,
   "version": "4.0.0",
   "description": "Helps make standard-version releases using tagged dist data 📦🎁📃",
@@ -7,7 +10,8 @@
   "bin": "tagger.js",
   "scripts": {
     "commit": "git-cz",
-    "release": "standard-version"
+    "release": "standard-version",
+    "test": "jest --coverage --runInBand --testTimeout=10000"
   },
   "standard-version": {
     "scripts": {
@@ -34,6 +38,7 @@
   "devDependencies": {
     "commitizen": "^4.0.3",
     "cz-conventional-changelog": "^3.0.2",
+    "jest": "^24.9.0",
     "standard-version": "^7.0.1"
   },
   "config": {
