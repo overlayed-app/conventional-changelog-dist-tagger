@@ -4,7 +4,7 @@
     "access": "public"
   },
   "private": false,
-  "version": "4.0.1",
+  "version": "4.0.2",
   "description": "Helps make standard-version releases using tagged dist data 📦🎁📃",
   "main": "preset.js",
   "bin": "tagger.js",

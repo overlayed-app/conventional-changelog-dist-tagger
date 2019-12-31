@@ -2,6 +2,13 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+### [4.0.2](https://github.com/overlayed-app/standard-version-tagger/compare/v4.0.1...v4.0.2) (2019-12-31)
+
+
+### Bug Fixes
+
+* **release:** prevent coverage, tests from going to npm ([cf819da](https://github.com/overlayed-app/standard-version-tagger/commit/cf819da0bfcd5012ffe9c638049ff2dd466b3117))
+
 ### [4.0.1](https://github.com/overlayed-app/standard-version-tagger/compare/v4.0.0...v4.0.1) (2019-12-31)
 
 ## [4.0.0](https://github.com/overlayed-app/standard-version-tagger/compare/v2.0.0...v4.0.0) (2019-12-29)
